@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Animate on Scroll - Pure CSS/JS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:200,600'><link rel="stylesheet" href="animate2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header data-animation="fadeIn">
+  <h1>
+    <div class="title" data-animation="slideInDown" data-animation-delay=".75s"><b>Animate</b></div>
+    <div class="subtitle" data-animation="slideInUp" data-animation-delay="1.5s">On Scroll</div>
+  </h1>
+</header>
+
+<section>
+  <h1><b>Slide</b> Animation</h1>
+  <div class="box" data-animation="slideInRight"></div>
+  <div class="box" data-animation="slideInUp" data-animation-delay=".3s"></div>
+  <div class="box" data-animation="slideInDown" data-animation-delay=".6s"></div>
+  <div class="box" data-animation="slideInLeft" data-animation-delay=".9s"></div>
+</section>
+
+<section>
+  <h1><b>Zoom</b> Animation</h1>
+  <div class="box" data-animation="zoomIn"></div>
+  <div class="box" data-animation="zoomIn" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="zoomIn" data-animation-delay="600ms"></div>
+</section>
+
+<section>
+  <h1><b>Reverse Zoom</b> Animation</h1>
+  <div class="box" data-animation="zoomReverseIn"></div>
+  <div class="box" data-animation="zoomReverseIn" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="zoomReverseIn" data-animation-delay="600ms"></div>
+</section>
+
+<section>
+  <h1><b>Fade</b> Animation</h1>
+  <div class="box" data-animation="fadeIn"></div>
+  <div class="box" data-animation="fadeIn" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="fadeIn" data-animation-delay="600ms"></div>
+</section>
+
+<section>
+  <h1><b>Flip</b> Animation</h1>
+  <div class="box" data-animation="flipInY"></div>
+  <div class="box" data-animation="flipInY" data-animation-delay="300ms"></div>
+  <div class="box" data-animation="flipInY" data-animation-delay="600ms"></div>
+</section>
+<!-- partial -->
+  <script  src="./animate2.js"></script>
+
+</body>
+</html>

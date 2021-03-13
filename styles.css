@@ -1,0 +1,99 @@
+.home {
+	height: 900px;
+	background-image: url(bg_hero_1.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#container__home {
+	padding-top: 20vh;
+}
+#header__home {
+	margin-top: 15vh;
+}
+#img__home {
+	max-height: 500px;
+	min-height: 170px;
+}
+#btn-nav {
+	background-color: rgb(25, 25, 179);
+	color: white;
+	border-radius: 20px;
+	margin-right: 20px;
+	padding: 10px 15px;
+}
+#btn-nav:hover, #btn-submit:hover{
+	box-shadow: 0 4px 16px 1px darkblue;
+}
+#fa1 {
+	margin: 10px 0px;
+	background-color: orange;
+	padding: 15px;
+	font-size: 30px;
+	border-radius: 50%;
+}
+#fa2 {
+	margin: 10px 0px;
+	background-color: blue;
+	padding: 15px;
+	font-size: 30px;
+	border-radius: 50%;
+}
+#fa3 {
+	margin: 10px 0px;
+	background-color: purple;
+	padding: 15px;
+	font-size: 30px;
+	border-radius: 50%;
+}
+.features1 {
+	padding-bottom: 100px;
+}
+.features2 {
+	background-image: url(pattern_2.svg);
+	padding: 150px 0px;
+}
+.features3 {
+	background-color: #383340;
+	padding: 100px 0px;
+}
+.pricing {
+	background-image: url(pattern_1.svg);
+}
+#pricing-table-1 {
+	background-image: url(pricing_pattern_grayscale.svg);
+	width: 300px;
+	height: 560px;
+	box-shadow: 0px 6px 10px 3px black;
+}
+#pricing-table-2 {
+	background-image: url(pricing_pattern.svg);
+	width: 300px;
+	height: 560px;
+	box-shadow: 0px 10px 6px 3px black;
+}
+.pricing-head {
+	margin-left: -10%;
+	padding-top: 42%;
+}
+.customer-service {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)), url(bg_testimonials.jpg);
+    background-size: cover;
+    padding: 50px 0px;
+    color: white;
+    background-attachment: fixed;
+}
+#btn__customer{
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+#btn-submit{
+    background-color: rgb(25, 25, 179);
+    color: white;
+    padding: 5px 35px;
+}
+.footer{
+    color: white;
+    background-color: #383340;
+    padding: 10px 0px;
+}

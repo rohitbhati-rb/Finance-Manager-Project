@@ -1,0 +1,333 @@
+:root {
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 1s;
+}
+
+@-webkit-keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-webkit-keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-webkit-keyframes slideInleft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes slideInleft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-webkit-keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-webkit-keyframes zoomReverseIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes zoomReverseIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@-webkit-keyframes flipInY {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(90vw) rotateY(67.5deg);
+            transform: perspective(90vw) rotateY(67.5deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+@keyframes flipInY {
+  0% {
+    opacity: 0;
+    -webkit-transform: perspective(90vw) rotateY(67.5deg);
+            transform: perspective(90vw) rotateY(67.5deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+[data-animation] {
+  opacity: 0;
+  -webkit-animation-timing-function: var(--animation-timing-function);
+          animation-timing-function: var(--animation-timing-function);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-duration: var(--animation-duration);
+          animation-duration: var(--animation-duration);
+  will-change: transform, opacity;
+}
+
+.animations-disabled,
+.animations-disabled [data-animation] {
+  -webkit-animation: none !important;
+          animation: none !important;
+  opacity: 1 !important;
+}
+
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+          animation-name: slideInUp;
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+          animation-name: slideInDown;
+}
+
+.slideInLeft {
+  -webkit-animation-name: slideInleft;
+          animation-name: slideInleft;
+}
+
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+          animation-name: slideInRight;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+.zoomReverseIn {
+  -webkit-animation-name: zoomReverseIn;
+          animation-name: zoomReverseIn;
+}
+
+.flipInY {
+  -webkit-animation-name: flipInY;
+          animation-name: flipInY;
+}
+
+.flipOutY {
+  -webkit-animation-name: flipInY;
+          animation-name: flipInY;
+  animation-direction: reverse;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: calc(1em + 0.25rem);
+}
+
+html {
+  background: #000;
+  font: 18px/1.5 "Poppins", sans-serif;
+  letter-spacing: -0.1em;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #8599ad;
+  font-weight: 200;
+}
+
+h1 {
+  width: 100%;
+  font-weight: 200;
+  text-align: center;
+  margin: 0 0 4rem;
+  font-size: 3rem;
+}
+
+b {
+  font-weight: 600;
+}
+
+header,
+section {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: center;
+  padding: 3rem 1rem;
+}
+
+header {
+  background: radial-gradient(circle at top right, #e61a5e, #5e1ae6);
+  color: #fff;
+}
+
+header h1 {
+  margin: 0;
+  color: #fff;
+}
+
+header .title {
+  font-size: 5rem;
+}
+
+header .subtitle {
+  font-size: 4rem;
+}
+
+section {
+  background: #fff;
+}
+section:nth-child(odd) {
+  background: #f7f9fa;
+}
+
+.box {
+  width: 7rem;
+  height: 7rem;
+  margin: 1rem;
+  background: radial-gradient(circle at top right, #e61a5e, #5e1ae6);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3) inset, 0 3px 9px rgba(0, 0, 0, 0.3);
+}
