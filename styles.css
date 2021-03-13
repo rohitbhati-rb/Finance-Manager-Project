@@ -1,6 +1,6 @@
 .home {
 	height: 900px;
-	background-image: url(bg_hero_1.svg);
+	background-image: url(Assets/bg_hero_1.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -49,7 +49,7 @@
 	padding-bottom: 100px;
 }
 .features2 {
-	background-image: url(pattern_2.svg);
+	background-image: url(Assets/pattern_2.svg);
 	padding: 150px 0px;
 }
 .features3 {
@@ -57,16 +57,16 @@
 	padding: 100px 0px;
 }
 .pricing {
-	background-image: url(pattern_1.svg);
+	background-image: url(Assets/pattern_1.svg);
 }
 #pricing-table-1 {
-	background-image: url(pricing_pattern_grayscale.svg);
+	background-image: url(Assets/pricing_pattern_grayscale.svg);
 	width: 300px;
 	height: 560px;
 	box-shadow: 0px 6px 10px 3px black;
 }
 #pricing-table-2 {
-	background-image: url(pricing_pattern.svg);
+	background-image: url(Assets/pricing_pattern.svg);
 	width: 300px;
 	height: 560px;
 	box-shadow: 0px 10px 6px 3px black;
@@ -76,7 +76,7 @@
 	padding-top: 42%;
 }
 .customer-service {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)), url(bg_testimonials.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356)), url(Assets/bg_testimonials.jpg);
     background-size: cover;
     padding: 50px 0px;
     color: white;
